@@ -39,8 +39,6 @@
 
 - name: Print Play Variable from vars_file1
   hosts : localhost
-  vars_files:
-    - vars.yml
   tasks:
     - name: Print Play Variable from vars_file1
       vars_files:
