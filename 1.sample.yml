@@ -29,9 +29,9 @@
         msg: URL = {{URL}}
 
 
-- name: Print variable from tasks
+- name: Print variable from INV
   hosts : all
   tasks:
-    - name: Print Play Variable from tasks
+    - name: Print Play Variable from INV
       ansible.builtin.debug:
         msg: URL = {{URL}}
