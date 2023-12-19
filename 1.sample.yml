@@ -37,11 +37,3 @@
         msg: URL = {{URL}}
 
 
-- name: Print Play Variable from vars_file1
-  hosts : localhost
-  tasks:
-    - name: Print Play Variable from vars_file1
-      vars_files:
-         - vars.yml
-      ansible.builtin.debug:
-        msg: URL = {{URL}}
