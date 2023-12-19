@@ -1,5 +1,5 @@
 - name: Print variable 
-  hosts : localhosts
+  hosts : localhost
   vars: 
     URL: Print play variable
   tasks:
