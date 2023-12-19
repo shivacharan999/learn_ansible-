@@ -27,3 +27,11 @@
         URL: Print play variable from tasks
       ansible.builtin.debug:
         msg: URL = {{URL}}
+
+
+- name: Print variable from tasks
+  hosts : all
+  tasks:
+    - name: Print Play Variable from tasks
+      ansible.builtin.debug:
+        msg: URL = {{URL}}
