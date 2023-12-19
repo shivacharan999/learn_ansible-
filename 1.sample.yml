@@ -16,3 +16,14 @@
     - name: Print Play Variable from vars_file
       ansible.builtin.debug:
         msg: URL = {{URL}}
+
+
+
+- name: Print variable from tasks
+  hosts : localhost
+  tasks:
+    - name: Print Play Variable from tasks
+      vars: 
+        URL: Print play variable from tasks
+      ansible.builtin.debug:
+        msg: URL = {{URL}}
