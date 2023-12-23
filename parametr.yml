@@ -2,5 +2,5 @@
   hosts: localhost
   tasks:
     - name: print test 1
-      asnible.builtin.debug:
-      msg: "{{ lookup('amazon.aws_ssm', 'test1') }}"
+      ansible.builtin.debug:
+        msg: "{{ lookup('amazon.aws_ssm', 'test1') }}"
